@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script>
+      function ligarLampada() {
+        document.getElementById('myImage').src='img/pic_bulbon.gif'
+      }
+
+      function desligarLampada() {
+        document.getElementById('myImage').src='img/pic_bulboff.gif'
+      }
+
+      function abrirNotificacao() {
+          var campoNome = document.getElementById("nome")
+          alert(campoNome.value)
+      }
+
+      function soma() {
+          var valor1 = document.getElementById("valor1")
+          var valor2 = document.getElementById("valor2")
+          console.log(parseInt(valor1.value) + parseInt(valor2.value))
+      }
+    </script>
+
+</head>
+
+<body>
+    <button onclick="ligarLampada()">Turn on the light</button>
+    <img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
+    <button onclick="desligarLampada()">Turn off the light</button>
+
+    <input id="nome" type="text" value="Digite seu nome">
+    <button onclick="abrirNotificacao()">Imprimir</button>
+
+    <input id="valor1" type="text">
+    <input id="valor2" type="text">
+    <button onclick="soma()">Imprimir</button>
+</body>
+</html>
